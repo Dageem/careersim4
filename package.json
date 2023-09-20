@@ -1,13 +1,17 @@
 {
-  "name": "react-and-express-boilerplate",
+  "name": "34d-juicebox",
   "private": true,
   "version": "0.0.0",
+  "prisma": {
+    "seed": "node prisma/seed.js"
+  },
   "scripts": {
     "dev": "clear && concurrently 'npm run less' 'npm run server'",
     "build": "vite build",
     "preview": "vite preview",
     "server": "nodemon --watch server -e js,html server/index.js",
     "less": "less-watch-compiler src/style src index.less"
+    
   },
   "dependencies": {
     "@prisma/client": "^5.3.0",
